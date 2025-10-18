@@ -2,90 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+/* Mobile Design */
 header{
-    /* height: 500px; */
     background-color: rgb(247,235,218);
-    background-image: url("/assets/bg_img_hero.svg"),
+    /* background-image: url("/assets/bg_img_hero.svg"),
     url("/assets/bg_img_hero.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 420px, 420px;
     background-position: top right, bottom left;
-    padding-bottom: 300px;
+    padding-bottom: 300px; */
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 32px 135px;
+    padding: 10px 10px;
 }
-
+.navbar > img{
+    width: 60px;
+}
 .navbar .nav-links{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
-
 .navbar .nav-links li{
-    
-}
+    /* display: ; */
 
-.navbar .nav-links a{
+}
+.navbar .nav-links li a{
     text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 .navbar .nav-3{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 4px;
 }
-
 .navbar .input-section .fa-solid{
     position:absolute;
-    /* margin: 8px; */
-    padding: 8px;
+    padding: 5px;
 }
-
 .navbar .input-section .input-field{
+    max-width: 96px;
     border: 1px solid tomato;
     border-radius: 10px;
-    padding: 5px 12px;
+    padding: 4px 10px 4px 24px;
 }
-
-input::placeholder{
-    /* text-align: center; */
-    padding-left: 20px;
-}
+/* input::placeholder{
+    text-align: center;
+    padding-left: 16px;
+} */
 
 .hero{
-    /* background-color: rgb(247,235,218); */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 100px;
-    margin: 0 135px;
+    padding: 10px;
 }
-
 .hero .hero-text{
-    width: 50%;
+    text-align: center;
+    padding-bottom: 20px;
 }
 .hero .hero-text h1{
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
-    padding: 20px 0;
 }
 .hero .hero-text p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: light;
     padding-bottom: 16px;
 }
-
 .hero .hero-text .hero-btn{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .hero .hero-text .hero-btn .order-btn{
     border: 1px solid rgb(47,33,6);
@@ -116,75 +114,54 @@ input::placeholder{
     /* height: auto; */
     border: 1px solid tomato;
     border-radius: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: rgb(47,33,5);
     position: relative;
 }
-
 .hero .hero-img .hero-main-img{
     width: 100%;
-    padding: 20px;
+    padding: 6px;
 }
-
 .hero .hero-img p{
     width: fit-content;
-    border: 4px solid rgb(164,158,145);
+    border: 2px solid rgb(164,158,145);
     border-radius: 24px;
-    padding: 12px 48px;
+    padding: 2px 10px;
     text-align: center;
     background-color: rgb(255,255,255);
     position: absolute;
     z-index: 1;
 }
-
 .hero .hero-img .stat-one{
-    /* position: absolute; */
-    top: 150px;
-    right: -50px;
-    /* z-index: 1; */
+    top: 80px;
+    right: -36px;
 }
 .hero .hero-img .stat-two{
-    /* position: absolute; */
     top: 10px;
-    left: 30px;
-    /* z-index: 1; */
+    left: -20px;
 }
 .hero .hero-img .stat-three{
-    /* position: absolute; */
-    bottom: 60px;
-    left: 0px;
-    /* z-index: 1; */
+    bottom: 40px;
+    left: -20px;
 }
-
 .popular{
     width: 100%;
-    position: absolute;
+    padding: 40px 0px;
 }
 .popular > h1{
-    position: absolute;
-    top: -250px;
-    padding-left: 120px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 .popular > img{
-    width: 100%;
-    padding: 0 80px;
-    position: relative;
-    z-index: 1;
-    top: -120px;
+    display: none;
 }
-
 .popular .popular-cards{
-    width: 100%;
-    padding: 0 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-self: center;
     gap: 20px;
-    position: relative;
-    top: -520px;
-    z-index: 2;
 }
-
 .popular .popular-cards .popular-card{
     position: relative;
     width: fit-content;
@@ -193,11 +170,9 @@ input::placeholder{
     padding: 20px 16px;
     background-color: rgb(255,255,255);
 }
-
 .popular .popular-cards .popular-card  .card-image > img{
     width: 270px;
 }
-
 .popular .popular-cards .popular-card .card-star{
     display: flex;
     align-items: center;
@@ -213,7 +188,6 @@ input::placeholder{
     left: 24px;
     z-index: 1;
 }
-
 .popular .popular-cards .popular-card .card-text{
     display: flex;
     align-items: start;
@@ -233,24 +207,341 @@ input::placeholder{
     padding: 4px 10px;
     text-align: center;
 }
-
 .popular .popular-cards .popular-card .card-text img{
     border-radius: 100%;
     padding: 4px;
     background-color: rgb(255,145,43);
 }
-
 .how-to{
-    padding: 320px 135px 0;
+    text-align: center;
+    padding: 30px 0;
 }
-
+.how-to > h1{
+    padding-bottom: 20px;
+}
 .how-to .delivery-cards{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-self: center;
+    gap: 20px;
     text-align: center;
 }
-
 .how-to .delivery-cards .delivery-card h4{
     padding: 10px 0;
+}
+
+
+/* Tablet Design */
+@media screen and (min-width: 768px){
+    header{
+        /* height: 500px; */
+        background-color: rgb(247,235,218);
+        background-image: url("/assets/bg_img_hero.svg"),
+        url("/assets/bg_img_hero.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 420px, 420px;
+        background-position: top right, bottom left;
+        padding-bottom: 300px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 135px;
+    }
+
+    .navbar .nav-links{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+
+    .navbar .nav-links a{
+        text-decoration: none;
+    }
+    .navbar .nav-3{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .navbar .input-section .fa-solid{
+        position:absolute;
+        /* margin: 8px; */
+        padding: 8px;
+    }
+
+    .navbar .input-section .input-field{
+        border: 1px solid tomato;
+        border-radius: 10px;
+        padding: 5px 12px;
+    }
+
+    input::placeholder{
+        /* text-align: center; */
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+/* Desktop Design */
+@media screen and (min-width: 1200px){
+    header{
+        /* height: 500px; */
+        background-color: rgb(247,235,218);
+        background-image: url("/assets/bg_img_hero.svg"),
+        url("/assets/bg_img_hero.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 420px, 420px;
+        background-position: top right, bottom left;
+        padding-bottom: 300px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 135px;
+    }
+
+    .navbar .nav-links{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .navbar .nav-links li{
+        
+    }
+
+    .navbar .nav-links a{
+        text-decoration: none;
+    }
+    .navbar .nav-3{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .navbar .input-section .fa-solid{
+        position:absolute;
+        /* margin: 8px; */
+        padding: 8px;
+    }
+
+    .navbar .input-section .input-field{
+        border: 1px solid tomato;
+        border-radius: 10px;
+        padding: 5px 12px;
+    }
+
+    input::placeholder{
+        /* text-align: center; */
+        padding-left: 20px;
+    }
+
+    .hero{
+        /* background-color: rgb(247,235,218); */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        margin: 0 135px;
+    }
+
+    .hero .hero-text{
+        width: 50%;
+    }
+    .hero .hero-text h1{
+        font-size: 48px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+    .hero .hero-text p{
+        font-size: 24px;
+        font-weight: light;
+        padding-bottom: 16px;
+    }
+
+    .hero .hero-text .hero-btn{
+        display: flex;
+        gap: 20px;
+    }
+    .hero .hero-text .hero-btn .order-btn{
+        border: 1px solid rgb(47,33,6);
+        border-radius: 12px;
+        background-color: rgb(47,33,6);
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .hero .hero-text .hero-btn .menu-btn{
+        border: 1px solid rgb(47,33,6);
+        border-radius: 12px;
+        /* background-color: rgb(47,33,6); */
+        padding: 10px 20px;
+        color: rgb(255,145,43);
+    }
+    .hero .hero-text .hero-btn .order-btn img{
+        border: 1px solid rgb(255,145,43);
+        border-radius: 100%;
+        padding: 5px;
+        background-color: rgb(255,145,43);
+    }
+    .hero .hero-img{
+        width: 50%;
+        /* height: auto; */
+        border: 1px solid tomato;
+        border-radius: 100%;
+        padding: 10px;
+        background-color: rgb(47,33,5);
+        position: relative;
+    }
+
+    .hero .hero-img .hero-main-img{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero .hero-img p{
+        width: fit-content;
+        border: 4px solid rgb(164,158,145);
+        border-radius: 24px;
+        padding: 12px 48px;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .hero .hero-img .stat-one{
+        /* position: absolute; */
+        top: 150px;
+        right: -50px;
+        /* z-index: 1; */
+    }
+    .hero .hero-img .stat-two{
+        /* position: absolute; */
+        top: 10px;
+        left: 30px;
+        /* z-index: 1; */
+    }
+    .hero .hero-img .stat-three{
+        /* position: absolute; */
+        bottom: 60px;
+        left: 0px;
+        /* z-index: 1; */
+    }
+
+    .popular{
+        width: 100%;
+        position: absolute;
+    }
+    .popular > h1{
+        position: absolute;
+        top: -250px;
+        padding-left: 120px;
+    }
+    .popular > img{
+        width: 100%;
+        padding: 0 80px;
+        position: relative;
+        z-index: 1;
+        top: -120px;
+    }
+
+    .popular .popular-cards{
+        width: 100%;
+        padding: 0 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        position: relative;
+        top: -520px;
+        z-index: 2;
+    }
+
+    .popular .popular-cards .popular-card{
+        position: relative;
+        width: fit-content;
+        border: 1px solid rgb(164,158,145);
+        border-radius: 8px;
+        padding: 20px 16px;
+        background-color: rgb(255,255,255);
+    }
+
+    .popular .popular-cards .popular-card  .card-image > img{
+        width: 270px;
+    }
+
+    .popular .popular-cards .popular-card .card-star{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: fit-content;
+        border: 4px solid rgb(164,158,145);
+        border-radius: 20px;
+        padding: 2px 10px;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        position: absolute;
+        top: 28px;
+        left: 24px;
+        z-index: 1;
+    }
+
+    .popular .popular-cards .popular-card .card-text{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .popular .popular-cards .popular-card .card-text .card-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 10px 0;
+    }
+    .popular .popular-cards .popular-card .card-text .card-btn button{
+        border: 1px solid rgb(255,145,43);
+        border-radius: 4px;
+        padding: 4px 10px;
+        text-align: center;
+    }
+
+    .popular .popular-cards .popular-card .card-text img{
+        border-radius: 100%;
+        padding: 4px;
+        background-color: rgb(255,145,43);
+    }
+
+    .how-to{
+        padding: 320px 135px 0;
+    }
+
+    .how-to .delivery-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .how-to .delivery-cards .delivery-card h4{
+        padding: 10px 0;
+    }
 }

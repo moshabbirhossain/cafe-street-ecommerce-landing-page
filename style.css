@@ -232,25 +232,28 @@ header{
 }
 
 
+
+
 /* Tablet Design */
 @media screen and (min-width: 768px){
     header{
-        /* height: 500px; */
         background-color: rgb(247,235,218);
         background-image: url("/assets/bg_img_hero.svg"),
         url("/assets/bg_img_hero.svg");
         background-repeat: no-repeat, no-repeat;
-        background-size: 420px, 420px;
+        background-size: 360px, 340px;
         background-position: top right, bottom left;
-        padding-bottom: 300px;
+        padding-bottom: 260px;
     }
     .navbar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 32px 135px;
+        padding: 32px 24px;
     }
-
+    .navbar > img{
+        width: 120px;
+    }
     .navbar .nav-links{
         list-style: none;
         display: flex;
@@ -260,35 +263,212 @@ header{
     }
 
 
-    .navbar .nav-links a{
+    .navbar .nav-links li a{
         text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
     }
     .navbar .nav-3{
         display: flex;
         align-items: center;
         justify-content: space-around;
-        gap: 30px;
+        gap: 40px;
     }
 
     .navbar .input-section .fa-solid{
         position:absolute;
-        /* margin: 8px; */
-        padding: 8px;
+        padding: 14px;
     }
 
     .navbar .input-section .input-field{
+        max-width: 160px;
         border: 1px solid tomato;
         border-radius: 10px;
-        padding: 5px 12px;
+        padding: 10px 20px 10px 36px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    input::placeholder{
+        /* padding-left: 20px; */
     }
 
-    input::placeholder{
-        /* text-align: center; */
-        padding-left: 20px;
+    .hero{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px;
+        padding-right: 48px;
+    }
+    .hero .hero-text{
+        width: 50%;
+        text-align: start;
+    }
+    .hero .hero-text h1{
+        font-size: 44px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+    .hero .hero-text p{
+        font-size: 20px;
+        font-weight: light;
+        padding-bottom: 16px;
+    }
+    .hero .hero-text .hero-btn{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+    .hero .hero-text .hero-btn .order-btn{
+        border: 1px solid rgb(47,33,6);
+        border-radius: 12px;
+        background-color: rgb(47,33,6);
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .hero .hero-text .hero-btn .menu-btn{
+        border: 1px solid rgb(47,33,6);
+        border-radius: 12px;
+        padding: 10px 20px;
+        color: rgb(255,145,43);
+    }
+    .hero .hero-text .hero-btn .order-btn img{
+        border: 1px solid rgb(255,145,43);
+        border-radius: 100%;
+        padding: 5px;
+        background-color: rgb(255,145,43);
+    }
+    .hero .hero-img{
+        width: 50%;
+        border: 1px solid tomato;
+        border-radius: 100%;
+        padding: 10px;
+        padding-left: 30px;
+        background-color: rgb(47,33,5);
+        position: relative;
+    }
+    .hero .hero-img .hero-main-img{
+        width: 100%;
+    }
+    .hero .hero-img p{
+        width: fit-content;
+        border: 4px solid rgb(164,158,145);
+        border-radius: 24px;
+        padding: 10px 32px;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        position: absolute;
+        z-index: 1;
+    }
+    .hero .hero-img .stat-one{
+        top: 150px;
+        right: -40px;
+    }
+    .hero .hero-img .stat-two{
+        top: 20px;
+        left: 10px;
+    }
+    .hero .hero-img .stat-three{
+        bottom: 80px;
+        left: -10px;
+    }
+    .popular{
+        width: 100%;
+        position: absolute;
+    }
+    .popular > h1{
+        position: absolute;
+        top: -200px;
+        padding-left: 40px;
+    }
+    .popular > img{
+        display: block;
+        width: 100%;
+        padding: 0 40px;
+        position: relative;
+        z-index: 1;
+        top: -100px;
+    }
+    .popular .popular-cards{
+        width: 100%;
+        padding: 0 60px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        top: -400px;
+        z-index: 2;
+    }
+    .popular .popular-cards .popular-card{
+        position: relative;
+        width: fit-content;
+        border: 1px solid rgb(164,158,145);
+        border-radius: 8px;
+        padding: 20px 16px;
+        background-color: rgb(255,255,255);
+    }
+    .popular .popular-cards .popular-card  .card-image > img{
+        width: 180px;
+    }
+    .popular .popular-cards .popular-card .card-star{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: fit-content;
+        border: 4px solid rgb(164,158,145);
+        border-radius: 20px;
+        padding: 2px 10px;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        position: absolute;
+        top: 28px;
+        left: 24px;
+        z-index: 1;
+    }
+    .popular .popular-cards .popular-card .card-text{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .popular .popular-cards .popular-card .card-text .card-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 10px 0;
+    }
+    .popular .popular-cards .popular-card .card-text .card-btn button{
+        border: 1px solid rgb(255,145,43);
+        border-radius: 4px;
+        padding: 4px 10px;
+        text-align: center;
+    }
+    .popular .popular-cards .popular-card .card-text img{
+        border-radius: 100%;
+        padding: 4px;
+        background-color: rgb(255,145,43);
+    }
+    .how-to{
+        padding: 260px 20px 0;
+    }
+    .how-to .delivery-cards{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-;
+        gap: 60px;
+        text-align: center;
+    }
+    .how-to .delivery-cards .delivery-card h4{
+        padding: 10px 0;
     }
 }
-
-
 
 
 
@@ -320,11 +500,13 @@ header{
     }
 
     .navbar .nav-links li{
-        
+
     }
 
-    .navbar .nav-links a{
+    .navbar .nav-links li a{
         text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
     }
     .navbar .nav-3{
         display: flex;
@@ -342,17 +524,16 @@ header{
     .navbar .input-section .input-field{
         border: 1px solid tomato;
         border-radius: 10px;
-        padding: 5px 12px;
+        padding: 5px 12px 5px 28px;
     }
 
-    input::placeholder{
-        /* text-align: center; */
+    /* input::placeholder{
+        text-align: center;
         padding-left: 20px;
-    }
+    } */
 
     .hero{
-        /* background-color: rgb(247,235,218); */
-        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         gap: 100px;
@@ -361,9 +542,10 @@ header{
 
     .hero .hero-text{
         width: 50%;
+        text-align: start;
     }
     .hero .hero-text h1{
-        font-size: 48px;
+        font-size: 44px;
         font-weight: bold;
         padding: 20px 0;
     }
@@ -375,6 +557,8 @@ header{
 
     .hero .hero-text .hero-btn{
         display: flex;
+        align-items: center;
+        justify-content: start;
         gap: 20px;
     }
     .hero .hero-text .hero-btn .order-btn{
@@ -456,6 +640,7 @@ header{
         padding-left: 120px;
     }
     .popular > img{
+        display: block;
         width: 100%;
         padding: 0 80px;
         position: relative;
@@ -466,7 +651,7 @@ header{
     .popular .popular-cards{
         width: 100%;
         padding: 0 150px;
-        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
@@ -535,9 +720,10 @@ header{
     }
 
     .how-to .delivery-cards{
-        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-;
+        gap: 200px;
         text-align: center;
     }
 

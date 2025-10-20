@@ -21,7 +21,7 @@ header{
     padding: 10px 10px;
 }
 .navbar > img{
-    width: 60px;
+    width: 48px;
 }
 .navbar .nav-links{
     list-style: none;
@@ -30,13 +30,12 @@ header{
     justify-content: space-between;
     gap: 10px;
 }
-.navbar .nav-links li{
-    /* display: ; */
-
-}
+/* .navbar .nav-links li{
+    display: inline-block;
+} */
 .navbar .nav-links li a{
     text-decoration: none;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
     cursor: pointer;
 }
